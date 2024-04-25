@@ -1,5 +1,3 @@
 **1D Movement**
 
-An example of how to play
-
-Uses Kenny Assets "[Shape Characters](https://kenney.nl/assets/shape-characters)" set, with gratitude.
+Create a sprite 1D Movement Avatar, when the space bar is pressed, the player avatar emits a sprite from the avatar

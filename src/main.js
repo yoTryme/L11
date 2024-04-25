@@ -1,19 +1,17 @@
 // main.js
 let config = {
-    type: Phaser.AUTO,
+    parent: 'phaser-game',
+    type: Phaser.CANVAS,  // Using CANVAS rendering
     width: 800,
     height: 600,
-    physics: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 0 },
-            debug: false
-        }
-    },
     fps: {
-        forceSetTimeOut: true, target: 30
+        forceSetTimeOut: true,
+        target: 30           // Target 30 fps for the game loop
     },
-    scene: [Movement] 
+    render: {
+        pixelArt: true       // Pixel art will not be blurred when scaled
+    },
+    scene: [Movement]       // Make sure 'Movement' matches your scene's class name
 };
 
 const game = new Phaser.Game(config);
