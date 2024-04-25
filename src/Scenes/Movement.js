@@ -11,7 +11,7 @@ class Movement extends Phaser.Scene {
     preload() {
         this.load.setPath("./assets/");
         this.load.image("player", "character_squareYellow.png");  
-        this.load.image('bullet', 'character_handRed.png');  
+        this.load.image('bullet', 'item_sword.png');  
     }
     
     create() {
